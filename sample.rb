@@ -37,12 +37,7 @@ end
 		end
 	 end
 
-while(true) do
-	puts "Press any key to play or 0 to exit the game"
-	str=gets.to_i
-	if(str==0)
-		break
-	end
+while(true) do	
 puts "Choose a number:"
 puts "0: Goo"
 puts "1: Choki"
@@ -58,5 +53,6 @@ else
 	puts randomly
 	janken = Janken.new(player,enemy)
 	puts "#{janken.pon(player.hand, enemy.hand)}"
+
 end
 end
